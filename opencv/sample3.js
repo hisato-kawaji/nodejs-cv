@@ -34,7 +34,7 @@ const { writeFileSync, readFileSync, existsSync, mkdirSync } = require('fs');
   }
   const canvas = createCanvas(image.width, image.height);
   cv.imshow(canvas, src);
-  writeFileSync('output3.jpg', canvas.toBuffer('image/jpeg'));
+  writeFileSync('result/output3.jpg', canvas.toBuffer('image/jpeg'));
   src.delete(); gray.delete(); faceCascade.delete(); eyeCascade.delete(); faces.delete(); eyes.delete()
 })();
 /**

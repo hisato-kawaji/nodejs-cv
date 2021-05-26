@@ -15,7 +15,7 @@ const onRuntimeInitialized = async () => {
     height: dst.rows,
     data: Buffer.from(dst.data)
   })
-  .write('output.png');
+  .write('result/output.png');
   src.delete();
   dst.delete();
 };
