@@ -1,4 +1,5 @@
 node_modules/
 *.png
+*.jpg
 opencv.js
 !lena.png

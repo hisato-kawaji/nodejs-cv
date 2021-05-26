@@ -1,5 +1,6 @@
 const Jimp = require('jimp');
-async function onRuntimeInitialized(){
+
+const onRuntimeInitialized = async () => {
   var jimpSrc = await Jimp.read('../lena.png');
 
   var src = cv.matFromImageData(jimpSrc.bitmap);
@@ -17,7 +18,7 @@ async function onRuntimeInitialized(){
   .write('output.png');
   src.delete();
   dst.delete();
-}
+};
 
 Module = {
   onRuntimeInitialized
