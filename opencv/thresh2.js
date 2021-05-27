@@ -37,7 +37,7 @@ const installDOM = () => {
       thresh.ucharPtr(i, j)[0] = gray.ucharPtr(i, j)[0] > thval ? 255 : 0 ; // R
       thresh.ucharPtr(i, j)[1] = gray.ucharPtr(i, j)[0] > thval ? 255 : 0 ; // G
       thresh.ucharPtr(i, j)[2] = gray.ucharPtr(i, j)[0] > thval ? 255 : 0 ; // B
-      thresh.ucharPtr(i, j)[3] = 255 ; // B
+      thresh.ucharPtr(i, j)[3] = 255 ; // 明るさ
     }
   }
 

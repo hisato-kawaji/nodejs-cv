@@ -1,9 +1,9 @@
 const Jimp = require('jimp');
 
 const onRuntimeInitialized = async () => {
-  var jimpSrc = await Jimp.read('../lena.png');
+  const jimpSrc = await Jimp.read('../lena.png');
 
-  var src = cv.matFromImageData(jimpSrc.bitmap);
+  const src = cv.matFromImageData(jimpSrc.bitmap);
 
   let dst = new cv.Mat();
   let M = cv.Mat.ones(5, 5, cv.CV_8U);

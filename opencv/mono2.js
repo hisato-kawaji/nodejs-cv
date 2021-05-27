@@ -30,10 +30,10 @@ const installDOM = () => {
 
   for (let i = 0; i < src.rows; i++) {
     for (let j = 0; j < src.cols; j++) {
-      newcol = parseInt((src.ucharPtr(i, j)[0] +  src.ucharPtr(i, j)[1] + src.ucharPtr(i, j)[2]) / 3);
+      newcol = parseInt((src.ucharPtr(i, j)[0] + src.ucharPtr(i, j)[1] + src.ucharPtr(i, j)[2]) / 3);
       gray.ucharPtr(i, j)[0] = newcol; // R
-      gray.ucharPtr(i, j)[1] = newcol;   // G
-      gray.ucharPtr(i, j)[2] = newcol;   // B
+      gray.ucharPtr(i, j)[1] = newcol; // G
+      gray.ucharPtr(i, j)[2] = newcol; // B
       gray.ucharPtr(i, j)[3] = 255; // 明るさ
     }
   }
